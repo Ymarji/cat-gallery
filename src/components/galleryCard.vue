@@ -1,4 +1,4 @@
-<template v-if="cat">
+<template>
   <router-link :to="{ name: 'desc', params: { id: cat.id } }">
     <div class="card">
       <span>#wight {{ cat.id }}</span>

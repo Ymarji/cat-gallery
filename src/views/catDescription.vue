@@ -1,7 +1,8 @@
-<template v-if="id">
+<template>
   <div class="desc">
     <span># {{ cat?.id }}</span>
     <img
+      v-if="cat != null"
       calss="image"
       :src="cat?.url"
       alt="cat"

@@ -1,4 +1,4 @@
-export const BASE_URL = "https://api.thecatapi.com/v1/images/search?limit=10";
+export const BASE_URL = "https://api.thecatapi.com/v1/images/search?limit=20";
 
 export default {
   async getCart() {

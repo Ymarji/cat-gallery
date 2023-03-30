@@ -1,6 +1,13 @@
 <template>
-  <div class="gallery">
-    <galleryCard v-for="cat in cats" :cat="cat" :key="cat.id"></galleryCard>
+  <div class="gallery-cont" @scroll="onGalleryScroll" ref="cont">
+    <div class="gallery">
+      <galleryCard
+        v-for="(cat, index) in cats"
+        :cat="cat"
+        :key="cat.id + index"
+      ></galleryCard>
+    </div>
+    <span> Loading ...</span>
   </div>
 </template>
 
@@ -19,10 +26,26 @@ export default {
       cats: [],
     };
   },
+  methods: {
+    onGalleryScroll(ev) {
+      console.log(ev);
+      if (
+        this.$refs.cont.scrollTop + this.$refs.cont.clientHeight >=
+        this.$refs.cont.scrollHeight
+      ) {
+        catService.getCart().then((res) => (this.cats = this.cats.concat(res)));
+        console.log("hello");
+      }
+    },
+  },
 };
 </script>
 
 <style>
+.gallery-cont {
+  height: 80vh;
+  overflow-y: auto;
+}
 .gallery {
   width: 70vw;
   margin: auto;

@@ -1,0 +1,64 @@
+{
+  "cats": [
+    {
+      "id": "2c4",
+      "url": "../assets/logo.png",
+      "width": 367,
+      "height": 500
+    },
+    {
+      "id": "3dk",
+      "url": "../assets/logo.png",
+      "width": 500,
+      "height": 374
+    },
+    {
+      "id": "69o",
+      "url": "../assets/logo.png",
+      "width": 550,
+      "height": 697
+    },
+    {
+      "id": "6ps",
+      "url": "../assets/logo.png",
+      "width": 640,
+      "height": 480
+    },
+    {
+      "id": "7s9",
+      "url": "../assets/logo.png",
+      "width": 499,
+      "height": 316
+    },
+    {
+      "id": "dlu",
+      "url": "../assets/logo.png",
+      "width": 640,
+      "height": 451
+    },
+    {
+      "id": "dmg",
+      "url": "../assets/logo.png",
+      "width": 1024,
+      "height": 679
+    },
+    {
+      "id": "MTUwMDMxNA",
+      "url": "../assets/logo.png",
+      "width": 500,
+      "height": 362
+    },
+    {
+      "id": "IOetZNghN",
+      "url": "../assets/logo.png",
+      "width": 2348,
+      "height": 1587
+    },
+    {
+      "id": "6-hYtDpc0",
+      "url": "../assets/logo.png",
+      "width": 750,
+      "height": 750
+    }
+  ]
+}

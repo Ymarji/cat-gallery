@@ -27,10 +27,14 @@ export default {
     };
   },
   methods: {
-    onGalleryScroll(ev) {
-      console.log(ev);
+    onGalleryScroll() {
+      console.log(
+        this.$refs.cont.scrollTop + this.$refs.cont.clientHeight,
+        " ",
+        this.$refs.cont.scrollHeight
+      );
       if (
-        this.$refs.cont.scrollTop + this.$refs.cont.clientHeight >=
+        Math.round(this.$refs.cont.scrollTop + this.$refs.cont.clientHeight) >=
         this.$refs.cont.scrollHeight
       ) {
         catService.getCart().then((res) => (this.cats = this.cats.concat(res)));
@@ -49,6 +53,7 @@ export default {
 .gallery {
   width: 70vw;
   margin: auto;
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

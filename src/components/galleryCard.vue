@@ -1,7 +1,7 @@
 <template>
   <router-link :to="{ name: 'desc', params: { id: cat.id } }">
     <div class="card">
-      <span>#wight {{ cat.id }}</span>
+      <span class="cat-id">#wight {{ cat.id }}</span>
       <img :src="cat.url" alt="cat" width="125" height="125" />
     </div>
   </router-link>
@@ -19,6 +19,10 @@ export default {
 </script>
 
 <style>
+.cat-id {
+  max-width: 120px;
+  text-overflow: ellipsis;
+}
 .card {
   padding: 2rem;
   gap: 0.5rem;
